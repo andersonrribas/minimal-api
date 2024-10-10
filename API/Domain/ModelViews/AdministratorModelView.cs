@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using proj_minimal_api.Domain.Enuns;
+using proj_minimal_api.Domain.Enum;
 
 namespace proj_minimal_api.Domain.ModelViews
 {

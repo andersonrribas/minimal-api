@@ -1,4 +1,4 @@
-namespace proj_minimal_api.Domain.Enuns
+namespace proj_minimal_api.Domain.Enum
 {
     public enum PerfilEnum
     {
