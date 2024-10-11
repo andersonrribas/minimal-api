@@ -30,12 +30,14 @@ namespace proj_minimal_api.Domain.Services
 
         public void Delete(Administrator administrator)
         {
-            throw new NotImplementedException();
+            _contexto.Administrators.Remove(administrator);
+            _contexto.SaveChanges();
         }
 
         public void Update(Administrator administrator)
         {
-            throw new NotImplementedException();
+            _contexto.Administrators.Update(administrator);
+            _contexto.SaveChanges();
         }
         public Administrator? Login(LoginDTO loginDTO)
         {

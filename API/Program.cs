@@ -215,6 +215,38 @@ app.MapPost("/administrators", ([FromBody] AdministratorDTO administratorDTO, IA
 .RequireAuthorization()
 .RequireAuthorization(new AuthorizeAttribute { Roles = "Adm" })
 .WithTags("Administradores");
+
+app.MapPut("/administrator/{id}",
+    ([FromRoute] int id, [FromBody] AdministratorDTO administratorDTO, IAdministratorService administratorService) =>
+    {
+        var administrator = administratorService.GetById(id);
+
+        if (administrator == null) return Results.NotFound("Administrador não encontrado");
+
+        administrator.Email = administratorDTO.Email;
+        administrator.Perfil = administratorDTO.Perfil.ToString() ?? "Editor";
+
+        administratorService.Update(administrator);
+
+        return Results.Ok("Administrador atualizado com sucesso");
+    })
+.RequireAuthorization(new AuthorizeAttribute { Roles = "Adm" })
+.WithTags("Administradores");
+
+app.MapDelete("/administrator/{id}",
+    ([FromRoute] int id, IAdministratorService administratorService) =>
+    {
+        var administrator = administratorService.GetById(id);
+
+        if (administrator == null) return Results.NotFound("Administrador não encontrado");
+
+        administratorService.Delete(administrator);
+
+        return Results.NoContent(); // Retorna 204 No Content após a exclusão bem-sucedida
+    })
+.RequireAuthorization(new AuthorizeAttribute { Roles = "Adm" })
+.WithTags("Administradores");
+
 #endregion
 
 #region Veículos
