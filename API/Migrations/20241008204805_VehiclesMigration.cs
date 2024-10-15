@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace proj_minimal_api.Migrations
+namespace MinimalApi.Migrations
 {
     /// <inheritdoc />
     public partial class VehiclesMigration : Migration

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MinimalApi.DTOs;
-using proj_minimal_api.Domain.Entities;
+using MinimalApi.Domain.Entities;
 
-namespace proj_minimal_api.Domain.Interfaces
+namespace MinimalApi.Domain.Interfaces
 {
     public interface IVehicleService
     {

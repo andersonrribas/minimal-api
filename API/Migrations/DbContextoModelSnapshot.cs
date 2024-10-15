@@ -7,7 +7,7 @@ using MinimalApi.Infrastructure.Db;
 
 #nullable disable
 
-namespace proj_minimal_api.Migrations
+namespace MinimalApi.Migrations
 {
     [DbContext(typeof(DbContexto))]
     partial class DbContextoModelSnapshot : ModelSnapshot
@@ -21,7 +21,7 @@ namespace proj_minimal_api.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("proj_minimal_api.Domain.Entities.Administrator", b =>
+            modelBuilder.Entity("MinimalApi.Domain.Entities.Administrator", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -49,7 +49,7 @@ namespace proj_minimal_api.Migrations
                     b.ToTable("Administrators");
                 });
 
-            modelBuilder.Entity("proj_minimal_api.Domain.Entities.Vehicle", b =>
+            modelBuilder.Entity("MinimalApi.Domain.Entities.Vehicle", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

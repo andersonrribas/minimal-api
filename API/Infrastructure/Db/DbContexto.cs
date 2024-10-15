@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using proj_minimal_api.Domain.Entities;
+using MinimalApi.Domain.Entities;
 
 namespace MinimalApi.Infrastructure.Db
 {

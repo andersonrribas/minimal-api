@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace proj_minimal_api.Domain.Entities
+namespace MinimalApi.Domain.Entities
 {
     public class Administrator
     {

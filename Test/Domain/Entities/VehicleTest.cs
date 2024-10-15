@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using proj_minimal_api.Domain.Entities;
+using MinimalApi.Domain.Entities;
 
 namespace Test.Domain.Entities
 {

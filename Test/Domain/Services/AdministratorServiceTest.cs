@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MinimalApi.Infrastructure.Db;
-using proj_minimal_api.Domain.Entities;
-using proj_minimal_api.Domain.Services;
+using MinimalApi.Domain.Entities;
+using MinimalApi.Domain.Services;
 using Test.Infrastructure.Db;
 
 namespace Test.Domain.Services

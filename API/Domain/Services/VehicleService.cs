@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using MinimalApi.DTOs;
 using MinimalApi.Infrastructure.Db;
-using proj_minimal_api.Domain.Entities;
-using proj_minimal_api.Domain.Interfaces;
+using MinimalApi.Domain.Entities;
+using MinimalApi.Domain.Interfaces;
 
-namespace proj_minimal_api.Domain.Services
+namespace MinimalApi.Domain.Services
 {
     public class VehicleService : IVehicleService
     {

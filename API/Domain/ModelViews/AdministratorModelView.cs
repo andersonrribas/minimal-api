@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using proj_minimal_api.Domain.Enum;
+using MinimalApi.Domain.Enum;
 
-namespace proj_minimal_api.Domain.ModelViews
+namespace MinimalApi.Domain.ModelViews
 {
     public record AdministratorModelView
     {
